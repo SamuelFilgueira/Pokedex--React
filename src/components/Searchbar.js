@@ -21,7 +21,7 @@ const Searchbar = () => {
 
   return (
     <div className="searchbar-container">
-      <div className="searchbar">
+      <div className="searchbar"> 
         <input
           type="search"
           placeholder="Buscar Pokemon"

@@ -38,7 +38,7 @@ function App() {
     <div>
       <Navbar />
       <Searchbar />
-      <Pokedex
+      <Pokedex 
         pokemons={pokemons}
         load={load}
         page={page}

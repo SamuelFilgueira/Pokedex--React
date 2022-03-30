@@ -14,7 +14,7 @@ export const Pokedex = (props) => {
       setPage(page + 1)
     }
   };
-
+ 
   return (
     <div>
       <div className="pokedex-header">

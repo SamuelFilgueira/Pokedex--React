@@ -16,6 +16,6 @@ const Pagination = (props) => {
       </button>
     </div>
   );
-};
+}; 
 
 export default Pagination;
