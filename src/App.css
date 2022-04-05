@@ -4,16 +4,56 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+
+::-webkit-scrollbar-track-piece {
+  background-color: #EEE;
+  border-left: 1px solid #CCC
+}
+
+::-webkit-scrollbar-thumb:vertical,
+::-webkit-scrollbar-thumb:horizontal {
+  background-color: #BAC0C4;
+  border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: #717171
+}
+
 nav {
+  background-color: rgb(19, 18, 18);
+  color: #fff;
+  margin-bottom: 30px;
   height: 100px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+
+.nav-content-container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
 }
 
 nav .navbar-img {
   width: 160px;
+}
+
+.fav {
+  display: flex;
+  padding: 10px;
+}
+.fav > p {
+  margin-left: 14px;
+  cursor: pointer;
 }
 
 /* Searchbar */
@@ -118,7 +158,46 @@ nav .navbar-img {
   
 }
 
+.pokemon-heart-btn {
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.not-found-txt{
+  text-align: center;
+  font-size: 1.25rem;
+  padding: 20px;
+}
+
+.pagination-btn {
+  cursor: pointer;
+  margin: 0 10px 0 10px;
+  border: none;
+  border-radius: 18px;
+  font-size: 15px;
+  padding: 5px 8px 5px 8px;
+  color: #fff;
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
 
+@media only screen and (max-width: 868px){
+  .pokedex-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 598px) {
+  .pokedex-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+  }
+}

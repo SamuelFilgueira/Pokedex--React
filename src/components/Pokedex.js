@@ -10,7 +10,7 @@ export const Pokedex = (props) => {
     }
   };
   const onNextClick = () => {
-    if(page >= 0){
+    if(page+1 !== totalPages){
       setPage(page + 1)
     }
   };
@@ -27,7 +27,7 @@ export const Pokedex = (props) => {
         ></Pagination>
       </div>
       {load ? (
-        <div>Carregando, segura fera...</div>
+        <div>Carregando...</div>
       ) : (
         <div className="pokedex-grid">
           {pokemons &&
